@@ -82,12 +82,21 @@
                                         <subviews>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.05000000074505806" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="avf-Ae-htU">
                                                 <rect key="frame" x="-2" y="0.0" width="224" height="31"/>
+                                                <connections>
+                                                    <action selector="rgbSliderAction" destination="4rB-xQ-DJe" eventType="valueChanged" id="s2y-SA-hli"/>
+                                                </connections>
                                             </slider>
                                             <slider opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.26600000262260437" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="w8R-Oo-WlE">
                                                 <rect key="frame" x="-2" y="40" width="224" height="31"/>
+                                                <connections>
+                                                    <action selector="rgbSliderAction" destination="4rB-xQ-DJe" eventType="valueChanged" id="mYw-oj-upf"/>
+                                                </connections>
                                             </slider>
                                             <slider opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.49399998784065247" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="D9d-5m-w5W">
                                                 <rect key="frame" x="-2" y="80" width="224" height="31"/>
+                                                <connections>
+                                                    <action selector="rgbSliderAction" destination="4rB-xQ-DJe" eventType="valueChanged" id="BQQ-WI-eXT"/>
+                                                </connections>
                                             </slider>
                                         </subviews>
                                     </stackView>
