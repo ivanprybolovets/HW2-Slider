@@ -135,6 +135,9 @@
                                 <color key="backgroundColor" systemColor="systemGray5Color" red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                 <state key="normal" title="Done"/>
+                                <connections>
+                                    <action selector="getBackgraundColor" destination="4rB-xQ-DJe" eventType="touchUpInside" id="75G-e2-Jbu"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.14211790190000001" green="0.29647090469999998" blue="0.57609620340000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -153,7 +156,17 @@
                         <viewLayoutGuide key="safeArea" id="2jf-kI-3wc"/>
                     </view>
                     <connections>
-                        <outlet property="colorView" destination="jht-Ty-kxO" id="zDX-Fh-K69"/>
+                        <outlet property="blueLabel" destination="AFr-WL-JM7" id="ir5-IM-v3L"/>
+                        <outlet property="blueSlider" destination="D9d-5m-w5W" id="kgH-6J-TAZ"/>
+                        <outlet property="blueTextField" destination="uE0-hb-NYo" id="gnn-jD-Pzp"/>
+                        <outlet property="colorButton" destination="3xK-ih-kBl" id="GvG-fs-x0X"/>
+                        <outlet property="colorView" destination="jht-Ty-kxO" id="l0M-qK-NxM"/>
+                        <outlet property="greenLabel" destination="9RL-Id-csC" id="pfp-CB-PyG"/>
+                        <outlet property="greenSlider" destination="w8R-Oo-WlE" id="0WZ-2s-SUP"/>
+                        <outlet property="greenTextField" destination="1JC-of-rkd" id="ZC5-4D-T70"/>
+                        <outlet property="redLabel" destination="h8q-6Y-laB" id="MbR-Yh-53j"/>
+                        <outlet property="redSlider" destination="avf-Ae-htU" id="Zl6-hH-ZDv"/>
+                        <outlet property="redTextField" destination="xeX-nx-zEn" id="Q81-uu-sjx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jEB-Io-3vX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
