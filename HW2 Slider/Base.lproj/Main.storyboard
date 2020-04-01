@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4rB-xQ-DJe">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -10,7 +10,7 @@
         <!--View Controller-->
         <scene sceneID="Tem-BC-lqC">
             <objects>
-                <viewController id="4rB-xQ-DJe" customClass="ViewController" customModule="HW_2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="4rB-xQ-DJe" customClass="ViewController" customModule="HW2_Slider" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5cZ-5W-uOx">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -23,10 +23,10 @@
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Afh-jy-mbq">
-                                <rect key="frame" x="16" y="259" width="382" height="122"/>
+                                <rect key="frame" x="16" y="259" width="382" height="252.33333333333337"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="dwk-RC-gs6">
-                                        <rect key="frame" x="0.0" y="10.5" width="48" height="101"/>
+                                        <rect key="frame" x="0.0" y="75.666666666666686" width="48" height="101"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Red:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HRo-Dt-ppw">
                                                 <rect key="frame" x="0.0" y="0.0" width="48" height="17"/>
@@ -52,7 +52,7 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="Tfa-8O-vYZ">
-                                        <rect key="frame" x="56" y="10.5" width="30" height="101"/>
+                                        <rect key="frame" x="56" y="75.666666666666686" width="30" height="101"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h8q-6Y-laB">
                                                 <rect key="frame" x="0.0" y="0.0" width="30" height="17"/>
@@ -78,7 +78,7 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="cEw-tm-QEB">
-                                        <rect key="frame" x="94" y="6" width="220" height="110"/>
+                                        <rect key="frame" x="94" y="71.333333333333314" width="220" height="110"/>
                                         <subviews>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.05000000074505806" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="avf-Ae-htU">
                                                 <rect key="frame" x="-2" y="0.0" width="224" height="31"/>
@@ -92,7 +92,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="dny-3T-jsQ">
-                                        <rect key="frame" x="322" y="0.0" width="60" height="122"/>
+                                        <rect key="frame" x="322" y="65.333333333333314" width="60" height="122"/>
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="1.00" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xeX-nx-zEn">
                                                 <rect key="frame" x="0.0" y="0.0" width="60" height="34"/>
@@ -130,14 +130,24 @@
                                     <constraint firstItem="cEw-tm-QEB" firstAttribute="leading" secondItem="Tfa-8O-vYZ" secondAttribute="trailing" constant="8" id="qfL-m7-SVX"/>
                                 </constraints>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3xK-ih-kBl">
+                                <rect key="frame" x="170" y="529.33333333333337" width="74" height="80.666666666666629"/>
+                                <color key="backgroundColor" systemColor="systemGray5Color" red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <state key="normal" title="Done"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.14211790190000001" green="0.29647090469999998" blue="0.57609620340000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="jht-Ty-kxO" firstAttribute="top" secondItem="2jf-kI-3wc" secondAttribute="top" constant="34" id="43F-C3-opF"/>
+                            <constraint firstItem="3xK-ih-kBl" firstAttribute="top" secondItem="Afh-jy-mbq" secondAttribute="bottom" constant="18" id="9HM-2T-B66"/>
+                            <constraint firstItem="3xK-ih-kBl" firstAttribute="height" secondItem="5cZ-5W-uOx" secondAttribute="height" multiplier="0.089955" id="AKQ-Bh-LDr"/>
                             <constraint firstItem="Afh-jy-mbq" firstAttribute="top" secondItem="jht-Ty-kxO" secondAttribute="bottom" constant="53" id="Huf-Vy-FFJ"/>
                             <constraint firstItem="2jf-kI-3wc" firstAttribute="trailing" secondItem="jht-Ty-kxO" secondAttribute="trailing" constant="16" id="IUf-tI-9hh"/>
+                            <constraint firstItem="2jf-kI-3wc" firstAttribute="bottom" secondItem="3xK-ih-kBl" secondAttribute="bottom" constant="252" id="Ka7-Nb-eWS"/>
                             <constraint firstAttribute="trailing" secondItem="Afh-jy-mbq" secondAttribute="trailing" constant="16" id="TtX-6h-l5n"/>
                             <constraint firstItem="Afh-jy-mbq" firstAttribute="leading" secondItem="2jf-kI-3wc" secondAttribute="leading" constant="16" id="Xi1-TU-DQf"/>
+                            <constraint firstItem="3xK-ih-kBl" firstAttribute="centerX" secondItem="2jf-kI-3wc" secondAttribute="centerX" id="rI1-pa-qRE"/>
                             <constraint firstItem="jht-Ty-kxO" firstAttribute="leading" secondItem="2jf-kI-3wc" secondAttribute="leading" constant="16" id="y0E-PM-fXZ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="2jf-kI-3wc"/>
@@ -148,7 +158,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jEB-Io-3vX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-232" y="80"/>
+            <point key="canvasLocation" x="-232.80000000000001" y="79.610194902548727"/>
         </scene>
     </scenes>
 </document>
