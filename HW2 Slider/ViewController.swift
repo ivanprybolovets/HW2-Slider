@@ -46,22 +46,26 @@ class ViewController: UIViewController {
 //        redSlider.minimumValue = 0
 //        redSlider.maximumValue = 1
 //        redTextField.text = String(redSlider.value)
-        
-       
-        
-        
-    }
-    
-    
+    }    
    
-    @IBAction func rgbSliderAction() {
+    @IBAction func rgbSliderAction(_ sender: UISlider) {
+        
+        switch sender.tag {
+        case 0:
+            redLabel.text = string(from: sender)
+            redTextField.text = string(from: sender)
+        case 1:
+            greenLabel.text = string(from: sender)
+            greenTextField.text = string(from: sender)
+        case 2:
+            blueLabel.text = string(from: sender)
+            blueTextField.text = string(from: sender)
+        default:
+            break
+        }
+        
         setColor()
-        setValueForLabel()
-        setValueForTextField()
-        
-        
     }
-    
     
     @IBAction func getBackgraundColor() {
         if colorView.backgroundColor != UIColor.white  {
@@ -79,20 +83,19 @@ class ViewController: UIViewController {
         redLabel.text = redTextField.text
         greenLabel.text = greenTextField.text
         blueLabel.text =  blueTextField.text
+    }
     
-        
-    }
     private func setValueForTextField() {
-        redSlider.value = Float(Double(round(10*redSlider.value)/10))
-        redTextField.text = String(redSlider.value)
-        
-        greenSlider.value = Float(Double(round(10*greenSlider.value)/10))
-        greenTextField.text = String(greenSlider.value)
-        
-        blueSlider.value = Float(Double(round(10*blueSlider.value)/10))
-        blueTextField.text = String(blueSlider.value)
+        blueTextField.text = string(from: blueSlider)
+        greenTextField.text = string(from: greenSlider)
+        redTextField.text = string(from: redSlider)
     }
-    //RGB value
+    
+    // Сast value RGB
+    private func string(from slider: UISlider) -> String {
+        return String(format: "%.2f", slider.value)
+    }
+
     // Color view
     private func setColor() {
         colorView.backgroundColor = UIColor(red: CGFloat(redSlider.value),
