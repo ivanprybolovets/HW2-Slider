@@ -69,6 +69,12 @@ class ViewController: UIViewController {
         }
     }
     
+    @IBAction func tapOfKeybord() {
+        redTextField.resignFirstResponder()
+        greenTextField.resignFirstResponder()
+        blueTextField.resignFirstResponder()
+    }
+    
     private func setValueForLabel() {
         redLabel.text = redTextField.text
         greenLabel.text = greenTextField.text
